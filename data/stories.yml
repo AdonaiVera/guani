@@ -1,0 +1,54 @@
+version: "2.0"
+stories:
+- story: reservation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: reservation
+  - action: utter_ask_for_contact_info
+  - intent: name
+  - action: utter_ask_for_period_time
+  - intent: period_stay
+  - action: utter_ask_for_number_guest
+  - intent: number_guest
+  - action: utter_ask_for_reference_hostel
+  - intent: reference_hostal
+  - action: utter_acknowledge_provided_info
+  - action: utter_ask_for_reservation_finish
+  - action: utter_goodbye
+- story: questions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: questions
+  - action: utter_ask_for_questions
+  - intent: activities_hostel
+  - action: utter_ask_for_activities
+  - intent: food
+  - action: utter_ask_for_food
+  - intent: price
+  - action: utter_ask_for_price
+  - intent: rooms
+  - action: utter_ask_for_accomodation
+  - intent: fee
+  - action: utter_ask_for_fee
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID ba92919628314f65aa70243e13134bd2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: questions
+  - action: utter_ask_for_questions
+  - intent: fee
+  - action: action_default_fallback
+  - intent: activities_hostel
+  - action: utter_ask_for_activities
+  - intent: price
+  - action: action_default_fallback
+  - intent: rooms
+  - action: action_default_fallback
+  - intent: nlu_fallback
+  - action: action_default_fallback
+  - intent: goodbye
+  - action: utter_goodbye

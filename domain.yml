@@ -1,0 +1,104 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- reservation:
+    use_entities: true
+- name:
+    use_entities: true
+- period_stay:
+    use_entities: true
+- number_guest:
+    use_entities: true
+- reference_hostal:
+    use_entities: true
+- activities_hostel:
+    use_entities: true
+- food:
+    use_entities: true
+- price:
+    use_entities: true
+- rooms:
+    use_entities: true
+- fee:
+    use_entities: true
+- questions:
+    use_entities: true
+entities:
+- name
+- time_stay
+- number_guest
+slots:
+  name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  time_stay:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  number_guest:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: 'Hey! How are you? My name is Guani and I will help you today! '
+  utter_ask_for_contact_info:
+  - text: Hello! Could you please provide your contact information? What is your name?
+  utter_ask_for_period_time:
+  - text: During what period are you going to stay?
+  utter_ask_for_number_guest:
+  - text: How many guest?
+  utter_ask_for_reference_hostel:
+  - text: How do you hear about the hostel?
+  utter_ask_for_reservation_finish:
+  - text: Okey your reservation is done, thank you for book with Guani Hostel
+  utter_ask_for_activities:
+  - text: Yes {name} we have salsa night on thursday and karaoke on Friday. Besides, you can enjoy the bar open from 11 pm to 3 am
+  utter_ask_for_food:
+  - text: We have the best restaurant in the city, you can come and enjoy Colombian's food. It's open from 11 am to 9 pm
+  utter_ask_for_price:
+  - text: We have a couple of accomodation. The share room with eight people is 15 usd per night, the individual bed is 40 usd per night.
+  utter_ask_for_accomodation:
+  - text: We have individual room or room sharing with eight people.
+  utter_ask_for_questions:
+  - text: I'll try to solve your questions
+  utter_ask_for_fee:
+  - text: Yes we have a fee of 5 usd per night.
+  utter_acknowledge_provided_info:
+  - text: Thanks {name} for provided your info!
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye, it was a pleasure talked with you. Have a great day
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions: []
+forms: {}
+e2e_actions: []

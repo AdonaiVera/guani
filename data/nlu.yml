@@ -1,0 +1,178 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - what's up
+    - Hi
+    - Hola
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - see you
+    - thank you bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: reservation
+  examples: |
+    - I would like to make a reservation
+    - I want to stay in the hotel
+    - I need a bed to sleep
+    - I want to visit the hotel
+    - Is the reservation done ?
+    - Hi i wuold like to make a reservastion
+- intent: name
+  examples: |
+    - my name is [adonai](name)
+    - I'm [carlos](name)
+    - my name is [pedro](name)
+    - You can call me [Francisco](name)
+    - [Adonai](name)
+    - My name is [adonai](name) vera
+    - Ado
+    - My name is alfredo
+- intent: period_stay
+  examples: |
+    - I'm going to stay for a [couple of days](time_stay)
+    - Just [5 days](time_stay)
+    - from [5 to 9 of november](time_stay)
+    - just [one night](time_stay)
+    - [all the weekend](time_stay)
+    - just [5 months](time_stay)
+    - I'm going [to](time_stay) stay for [one night](time_stay)
+- intent: number_guest
+  examples: |
+    - just [2 guest](number_guest)
+    - we are [five](number_guest)
+    - we are [5](number_guest)
+    - its just [me and my fiance](number_guest)
+    - with my [two childs](number_guest)
+    - with my [wife](number_guest)
+    - [alone](number_guest)
+- intent: reference_hostal
+  examples: |
+    - I find you in internet
+    - A friend told me about the hostel
+    - I found it in Instagram
+    - I stay a couple of week ago
+    - I was walking and see the hostal
+- intent: activities_hostel
+  examples: |
+    - Do the hotel has other activity?
+    - Do you have activities?
+    - Do you have Karaoke?
+    - Do you have games?
+    - Can I meet new people in the hostel?
+    - Do the hotel has another activities?
+- intent: food
+  examples: |
+    - Do you include food ?
+    - Do you have restaurant?
+    - Is there any place to eat close to here?
+    - Do you know where can i find food ?
+    - I'm hungry
+- intent: price
+  examples: |
+    - How much is it ?
+    - What is the price ?
+    - How much for just one night ?
+    - What is the price for a bed ?
+    - What is the price for a full body ?
+- intent: rooms
+  examples: |
+    - What type of rooms do you have?
+    - Do you have king beds?
+    - What beds do you have?
+    - What accomodation do you have?
+    - what type of room do you have ?
+- intent: fee
+  examples: |
+    - Do you have an extra fee?
+    - Do I have to pay anything more?
+    - Do I have to pay when I arive to the hotel?
+    - Do you have a fee per night ?
+    - is theere additional fees?
+    - Do you have an extra feee?
+- intent: questions
+  examples: |
+    - I have a couple of questions
+    - Can I ask you something
+    - I have a doubt
+    - I have a question
+    - Guani I have a couple of questions
+    - Thank you, i have a couple of questions
