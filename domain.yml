@@ -41,6 +41,8 @@ intents:
     use_entities: true
 - questions:
     use_entities: true
+- nlu_fallback:
+    use_entities: true
 entities:
 - name
 - time_stay

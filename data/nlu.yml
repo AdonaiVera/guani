@@ -18,6 +18,7 @@ nlu:
     - what's up
     - Hi
     - Hola
+    - hola
 - intent: goodbye
   examples: |
     - good afternoon
@@ -33,6 +34,7 @@ nlu:
     - see you later
     - see you
     - thank you bye
+    - thank you, bye
 - intent: affirm
   examples: |
     - yes
@@ -50,6 +52,8 @@ nlu:
     - don't like that
     - no way
     - not really
+    - you are really stupid
+    - i heard that is really confortable
 - intent: mood_great
   examples: |
     - perfect
@@ -96,6 +100,9 @@ nlu:
     - I want to visit the hotel
     - Is the reservation done ?
     - Hi i wuold like to make a reservastion
+    - I want a bed
+    - Hi i need a bed urgent
+    - i need a room
 - intent: name
   examples: |
     - my name is [adonai](name)
@@ -106,6 +113,11 @@ nlu:
     - My name is [adonai](name) vera
     - Ado
     - My name is alfredo
+    - My name is [francisco](name)
+    - my name is [adonai](name) vera
+    - I'm rodolfo
+    - Im [Pedro](name)
+    - my name uis David
 - intent: period_stay
   examples: |
     - I'm going to stay for a [couple of days](time_stay)
@@ -115,6 +127,11 @@ nlu:
     - [all the weekend](time_stay)
     - just [5 months](time_stay)
     - I'm going [to](time_stay) stay for [one night](time_stay)
+    - from today until friday
+    - I'm going [to](time_stay) stay for [5 nights](time_stay)
+    - I'm going [to](time_stay) stay for [one month](time_stay)
+    - I'm going [to](time_stay) stay [one night](time_stay)
+    - im going [stya](time_stay) [one night](time_stay)
 - intent: number_guest
   examples: |
     - just [2 guest](number_guest)
@@ -124,6 +141,10 @@ nlu:
     - with my [two childs](number_guest)
     - with my [wife](number_guest)
     - [alone](number_guest)
+    - only me
+    - just [2](time_stay)
+    - Just [2 friends](time_stay)
+    - [two](number_guest)
 - intent: reference_hostal
   examples: |
     - I find you in internet
@@ -131,6 +152,9 @@ nlu:
     - I found it in Instagram
     - I stay a couple of week ago
     - I was walking and see the hostal
+    - I google it jeje
+    - A friend of my go to the hotel last year
+    - a friend of mine is the owner
 - intent: activities_hostel
   examples: |
     - Do the hotel has other activity?
@@ -139,6 +163,9 @@ nlu:
     - Do you have games?
     - Can I meet new people in the hostel?
     - Do the hotel has another activities?
+    - Do you have activities
+    - i want to participate in salsa night
+    - do the hotel has other activities?
 - intent: food
   examples: |
     - Do you include food ?
@@ -146,6 +173,8 @@ nlu:
     - Is there any place to eat close to here?
     - Do you know where can i find food ?
     - I'm hungry
+    - Do you include the food ?
+    - Do the hotel include food ?
 - intent: price
   examples: |
     - How much is it ?
@@ -153,6 +182,7 @@ nlu:
     - How much for just one night ?
     - What is the price for a bed ?
     - What is the price for a full body ?
+    - What is the price for one bed
 - intent: rooms
   examples: |
     - What type of rooms do you have?
@@ -160,6 +190,8 @@ nlu:
     - What beds do you have?
     - What accomodation do you have?
     - what type of room do you have ?
+    - what type of room do you have ?=
+    - Do you have double room?
 - intent: fee
   examples: |
     - Do you have an extra fee?
@@ -168,6 +200,8 @@ nlu:
     - Do you have a fee per night ?
     - is theere additional fees?
     - Do you have an extra feee?
+    - is there any aditional fees
+    - Do you have fee ?
 - intent: questions
   examples: |
     - I have a couple of questions
@@ -176,3 +210,6 @@ nlu:
     - I have a question
     - Guani I have a couple of questions
     - Thank you, i have a couple of questions
+    - How?
+    - I have a some questions about the hotel
+    - i have some questions
