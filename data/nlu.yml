@@ -19,6 +19,7 @@ nlu:
     - Hi
     - Hola
     - hola
+    - Hi hola
 - intent: goodbye
   examples: |
     - good afternoon
@@ -118,6 +119,8 @@ nlu:
     - I'm rodolfo
     - Im [Pedro](name)
     - my name uis David
+    - My name is [Adonai](name) Vera
+    - My name is [Adonai](name) vera
 - intent: period_stay
   examples: |
     - I'm going to stay for a [couple of days](time_stay)
@@ -132,6 +135,7 @@ nlu:
     - I'm going [to](time_stay) stay for [one month](time_stay)
     - I'm going [to](time_stay) stay [one night](time_stay)
     - im going [stya](time_stay) [one night](time_stay)
+    - I'm going [to](time_stay) stay for [two nights](time_stay)
 - intent: number_guest
   examples: |
     - just [2 guest](number_guest)
@@ -145,6 +149,7 @@ nlu:
     - just [2](time_stay)
     - Just [2 friends](time_stay)
     - [two](number_guest)
+    - [Two](number_guest)
 - intent: reference_hostal
   examples: |
     - I find you in internet
@@ -155,6 +160,9 @@ nlu:
     - I google it jeje
     - A friend of my go to the hotel last year
     - a friend of mine is the owner
+    - I heard that is really confortable
+    - One friend recommend me the hostal
+    - One friend recommend me
 - intent: activities_hostel
   examples: |
     - Do the hotel has other activity?

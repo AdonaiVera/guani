@@ -150,3 +150,73 @@ stories:
   - action: utter_ask_for_activities
   - intent: deny
   - action: action_default_fallback
+- story: Story from Conversation ID f1d7874f7807468ba114aabcf664c117
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: reservation
+  - action: utter_ask_for_contact_info
+  - intent: name
+    entities:
+    - name: Adonai
+  - slot_was_set:
+    - name: Adonai
+  - action: utter_ask_for_period_time
+  - intent: period_stay
+    entities:
+    - time_stay: to
+    - time_stay: two days
+  - slot_was_set:
+    - time_stay: two days
+  - action: utter_ask_for_number_guest
+  - intent: number_guest
+    entities:
+    - number_guest: two
+  - slot_was_set:
+    - number_guest: two
+  - action: utter_ask_for_reference_hostel
+  - intent: reference_hostal
+  - action: utter_acknowledge_provided_info
+  - action: utter_ask_for_reservation_finish
+  - action: utter_goodbye
+  - intent: questions
+  - action: utter_ask_for_questions
+- story: Story from Conversation ID 952e49d85cb54cfa8f63b82d279bc613
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: reservation
+  - action: utter_ask_for_contact_info
+  - intent: name
+    entities:
+    - name: Adonai
+  - slot_was_set:
+    - name: Adonai
+  - action: utter_ask_for_period_time
+  - intent: period_stay
+    entities:
+    - time_stay: to
+    - time_stay: two days
+  - slot_was_set:
+    - time_stay: two days
+  - action: utter_ask_for_number_guest
+  - intent: number_guest
+    entities:
+    - number_guest: two
+  - slot_was_set:
+    - number_guest: two
+  - action: utter_ask_for_reference_hostel
+  - intent: reference_hostal
+  - action: utter_acknowledge_provided_info
+  - action: utter_ask_for_reservation_finish
+  - action: utter_goodbye
+  - intent: questions
+  - action: utter_ask_for_questions
+  - intent: fee
+  - slot_was_set:
+    - name: Adonai
+  - slot_was_set:
+    - time_stay: two days
+  - slot_was_set:
+    - number_guest: two
+  - action: utter_ask_for_fee
